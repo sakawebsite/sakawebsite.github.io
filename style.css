@@ -48,3 +48,48 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* ==================================== */
+/* 1. Gaya Default (Untuk Desktop) */
+/* ==================================== */
+
+.header-nav {
+    display: flex; /* Untuk menyejajarkan menu secara horizontal */
+    justify-content: space-between; 
+    padding: 20px 50px; /* Padding sisi besar untuk desktop */
+}
+
+/* ==================================== */
+/* 2. MEDIA QUERY (Untuk Layar Kecil/Ponsel) */
+/* ==================================== */
+
+/* Terapkan gaya di bawah ini HANYA JIKA lebar layar (max-width) adalah 600px atau kurang */
+@media (max-width: 600px) {
+    
+    /* 1. Mengubah Navigasi */
+    .header-nav {
+        /* Mengubah tata letak header dari sejajar ke menumpuk */
+        flex-direction: column; 
+        align-items: center; /* Pusatkan elemen saat menumpuk */
+        padding: 10px 20px; /* Kurangi padding di ponsel */
+    }
+
+    /* 2. Mengubah Teks Utama */
+    h1 {
+        font-size: 2em; /* Mengurangi ukuran font agar tidak terlalu besar di ponsel */
+        text-align: center;
+    }
+    
+    /* 3. Membuat Gambar Responsif */
+    img {
+        /* Ini adalah aturan emas untuk gambar responsif! */
+        max-width: 100%; /* Lebar gambar tidak akan melebihi wadahnya */
+        height: auto; /* Memastikan rasio aspek (ketinggian) tetap terjaga */
+    }
+
+    /* 4. Mengubah Tata Letak Kolom (Jika Anda punya) */
+    .kolom {
+        width: 100%; /* Kolom yang tadinya 50% di desktop, menjadi 100% di ponsel */
+        margin-bottom: 20px;
+    }
+    
+}
