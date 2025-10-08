@@ -93,7 +93,7 @@ footer {
 .header-nav {
     display: flex; /* Untuk menyejajarkan menu secara horizontal */
     justify-content: space-between; 
-    padding: 20px 50px; /* Padding sisi besar untuk desktop */
+    padding: 20px 30px; /* Padding sisi besar untuk desktop */
 }
 
 /* ==================================== */
@@ -203,7 +203,7 @@ footer {
     display: flex; /* Aktifkan Flexbox */
     justify-content: space-between; /* Pisahkan logo dan navigasi */
     align-items: center; /* Sejajarkan vertikal di tengah */
-    padding: 20px 50px;
+    padding: 15px 30px;
     background-color: #333;
     color: white;
 }
