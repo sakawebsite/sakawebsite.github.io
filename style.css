@@ -50,6 +50,42 @@ footer {
 }
 
 
+/* Styling untuk Video Background */
+#myVideo {
+    /* Memposisikan video secara fixed agar tetap di latar belakang */
+    position: fixed; 
+    top: 0;
+    left: 0;
+    
+    /* Memastikan video menutupi seluruh layar tanpa terpotong */
+    min-width: 100%;
+    min-height: 100%;
+    
+    /* Ini adalah KUNCI: Menarik video ke lapisan paling belakang (di bawah z-index 0) */
+    z-index: -100;
+}
+
+/* 💡 Tambahan: Lapisan Hitam (Overlay) */
+/* Biasanya, Anda perlu lapisan semi-transparan di atas video
+   agar teks di website Anda mudah dibaca */
+.content-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% opacity hitam */
+    z-index: -99; /* Di atas video, tapi di bawah konten */
+}
+
+/* Styling untuk Konten Utama */
+/* Pastikan konten utama Anda memiliki z-index positif (misalnya 1) 
+   agar ia berada di atas lapisan video dan overlay */
+.main-header, .fitur-section { 
+    position: relative; 
+    z-index: 1; /* Pastikan semua konten Anda muncul di atas video (z-index: -100) */
+}
+
 /* ==================================== */
 /* 1. Gaya Default (Untuk Desktop) */
 /* ==================================== */
