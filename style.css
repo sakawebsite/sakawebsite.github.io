@@ -318,7 +318,7 @@ footer {
 
     footer {
         /* Kurangi padding */
-        padding: 15px 20px; /* Misalnya dari 30px 50px menjadi 15px 20px */
+        padding: 10px 15px; /* Misalnya dari 30px 50px menjadi 15px 20px */
         /* Pusatkan teks */
         text-align: center; 
         /* Perkecil font */
