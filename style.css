@@ -93,3 +93,34 @@ footer {
     }
     
 }
+/* Gaya untuk desktop dan layar lebar */
+.fitur-section {
+    display: flex; /* Mengaktifkan Flexbox untuk container */
+    gap: 20px; /* Memberi jarak 20px antar kartu */
+    padding: 40px;
+}
+
+.kartu {
+    /* Setiap kartu mengambil sepertiga dari lebar container */
+    width: 33.33%; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
+}
+/* Aturan khusus untuk layar ponsel (maksimal lebar 600px) */
+@media (max-width: 600px) {
+    
+    .fitur-section {
+        /* Mengubah arah Flexbox dari baris (row) menjadi kolom (column) */
+        flex-direction: column; 
+        padding: 20px; /* Kurangi padding di ponsel */
+        gap: 0; /* Hapus gap di ponsel */
+    }
+
+    .kartu {
+        /* PENTING: Setiap kartu mengambil lebar Penuh (100%) di ponsel */
+        width: 100%; 
+        margin-bottom: 15px; /* Beri jarak di bawah setiap kartu agar tidak terlalu rapat */
+    }
+}
+
