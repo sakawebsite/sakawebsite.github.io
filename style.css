@@ -108,7 +108,7 @@ footer {
         /* Mengubah tata letak header dari sejajar ke menumpuk */
         flex-direction: column; 
         align-items: center; /* Pusatkan elemen saat menumpuk */
-        padding: 10px 20px; /* Kurangi padding di ponsel */
+        padding: 10px 15px; /* Kurangi padding di ponsel */
     }
 
     /* 2. Mengubah Teks Utama */
