@@ -281,6 +281,48 @@ footer {
     .main-nav li {
         width: 100%;
         text-align: center;
+    } 
+    /*seting bagian atas footer */
+        @media (max-width: 600px) {
+    /* ... (kode CSS header yang sudah ada) ... */
+
+    .main-header {
+        /* Kurangi padding atas dan bawah, misalnya dari 15px jadi 10px */
+        padding: 10px 20px; 
+        /* Pastikan align-items: center; agar logo dan burger tetap sejajar di tengah */
+        align-items: center; 
+    }
+
+    .main-header .logo {
+        /* Jika logo Anda teks, perkecil font */
+        font-size: 1.2em; /* Misalnya dari 1.5em menjadi 1.2em */
+    }
+
+    .burger-menu {
+        /* Jika tombol burger terlalu besar */
+        font-size: 1.2em; /* Misalnya dari 1.5em menjadi 1.2em */
+    }
+    
+    /* Perbaikan untuk menu yang muncul setelah diklik */
+    .main-nav {
+        /* Jika Anda menggunakan `top` untuk memposisikan menu, 
+           sesuaikan dengan ketinggian header yang baru */
+        top: 40px; /* Jika header height ~40px setelah padding baru */
+    }
+
+    
+} 
+    /*setingan bagian bawah footer*/
+    @media (max-width: 600px) {
+    /* ... (kode CSS lainnya) ... */
+
+    footer {
+        /* Kurangi padding */
+        padding: 15px 20px; /* Misalnya dari 30px 50px menjadi 15px 20px */
+        /* Pusatkan teks */
+        text-align: center; 
+        /* Perkecil font */
+        font-size: 0.8em; 
     }
 }
 
