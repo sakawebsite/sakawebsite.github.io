@@ -185,4 +185,66 @@ footer {
     padding: 10px 15px;
     display: block;
 }
+/* Gaya Desktop */
+
+/* Sembunyikan tombol burger di desktop */
+.burger-menu {
+    display: none; 
+}
+
+/* ... (Gaya header dan nav desktop Anda sebelumnya) ... */
+.main-nav ul {
+    display: flex; /* Tetap horizontal di desktop */
+    /* ... */
+}
+
+/* GAYA UNTUK PONSEL (Layar maks. 600px) */
+@media (max-width: 600px) {
+    
+    .main-header {
+        /* Kembali ke flex-direction: row; agar logo dan burger sejajar di baris */
+        flex-direction: row; 
+        justify-content: space-between; /* Pisahkan logo dan burger */
+        align-items: center;
+        padding: 15px 20px;
+    }
+    
+    /* Tampilkan tombol burger di ponsel */
+    .burger-menu {
+        display: block; 
+        background: none;
+        border: none;
+        color: white; /* Sesuaikan warna */
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    
+    /* 1. Sembunyikan menu navigasi secara default di ponsel */
+    .main-nav {
+        display: none; 
+        position: absolute; /* Posisikan menu di bawah header */
+        top: 60px; /* Jarak dari atas header */
+        left: 0;
+        width: 100%;
+        background-color: #444; /* Beri latar belakang agar menu terlihat */
+        z-index: 100;
+    }
+    
+    /* 2. Gaya ketika menu harus ditampilkan (class "active" ditambahkan oleh JS) */
+    .main-nav.active {
+        display: block; /* Menampilkan menu */
+    }
+
+    /* Gaya item list menu vertikal di ponsel */
+    .main-nav ul {
+        flex-direction: column; 
+        padding: 0;
+        border-top: 1px solid #555;
+    }
+    
+    .main-nav li {
+        width: 100%;
+        text-align: center;
+    }
+}
 
