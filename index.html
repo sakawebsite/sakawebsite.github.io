@@ -45,6 +45,20 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+    // Ambil elemen tombol burger dan navigasi
+    const burgerButton = document.getElementById('burger-btn');
+    const navMenu = document.getElementById('main-nav');
+
+    // Tambahkan event listener untuk klik pada tombol burger
+    burgerButton.addEventListener('click', function() {
+        // Toggle (menambah/menghapus) kelas 'active' pada navigasi
+        navMenu.classList.toggle('active');
+    });
+</script>
+</body>
+</html>
 </body>
 </html>
 <section class="fitur-section">
