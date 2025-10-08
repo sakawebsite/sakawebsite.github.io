@@ -48,6 +48,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
 /* ==================================== */
 /* 1. Gaya Default (Untuk Desktop) */
 /* ==================================== */
@@ -122,5 +124,65 @@ footer {
         width: 100%; 
         margin-bottom: 15px; /* Beri jarak di bawah setiap kartu agar tidak terlalu rapat */
     }
+}
+
+/* GAYA UNTUK PONSEL (Layar maks. 600px) */
+@media (max-width: 600px) {
+    
+    .main-header {
+        /* PENTING: Mengubah arah Flexbox dari baris menjadi kolom */
+        flex-direction: column; 
+        padding: 15px 20px; /* Kurangi padding */
+        text-align: center; /* Pusatkan logo */
+    }
+    
+    .logo {
+        margin-bottom: 10px; /* Beri jarak antara logo dan menu */
+    }
+
+    .main-nav {
+        /* Agar navigasi mengambil lebar penuh di ponsel */
+        width: 100%; 
+    }
+    
+    .main-nav ul {
+        /* Menu di ponsel: Tumpuk ke bawah */
+        flex-direction: column; 
+        width: 100%;
+    }
+    
+    .main-nav li {
+        /* Membuat setiap item menu mengambil lebar penuh */
+        width: 100%; 
+        border-top: 1px solid #555; /* Tambahkan garis pemisah antar menu */
+    }
+
+    .main-nav li:last-child {
+        border-bottom: 1px solid #555; /* Garis di item menu terakhir */
+    }
+}
+
+/* GAYA UNTUK DESKTOP */
+.main-header {
+    display: flex; /* Aktifkan Flexbox */
+    justify-content: space-between; /* Pisahkan logo dan navigasi */
+    align-items: center; /* Sejajarkan vertikal di tengah */
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+}
+
+.main-nav ul {
+    display: flex; /* Menu ditampilkan secara horizontal */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
 }
 
