@@ -168,7 +168,7 @@ footer {
     .main-header {
         /* PENTING: Mengubah arah Flexbox dari baris menjadi kolom */
         flex-direction: column; 
-        padding: 15px 20px; /* Kurangi padding */
+        padding: 10px 15px; /* Kurangi padding */
         text-align: center; /* Pusatkan logo */
     }
     
@@ -318,7 +318,7 @@ footer {
 
     footer {
         /* Kurangi padding */
-        padding: 10px 15px; /* Misalnya dari 30px 50px menjadi 15px 20px */
+        padding: 5px 10px; /* Misalnya dari 30px 50px menjadi 15px 20px */
         /* Pusatkan teks */
         text-align: center; 
         /* Perkecil font */
